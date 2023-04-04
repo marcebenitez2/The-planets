@@ -148,10 +148,6 @@ body{
     background-color: var(--bordes);
 }
 
-.btn-active{
-    background-color: var(--mercury);
-}
-
 .number{
     color: grey;
 }
@@ -224,3 +220,45 @@ li{
     border-top: 5px solid var(--neptune);
 }
 
+.mercurybtn.btn-active{
+    background-color: var(--mercury);
+}
+.venusbtn.btn-active{
+    background-color: var(--venus);
+}
+.earthbtn.btn-active{
+    background-color: var(--earth);
+}
+.marsbtn.btn-active{
+    background-color: var(--mars);
+}
+.jupiterbtn.btn-active{
+    background-color: var(--jupiter);
+}
+.saturnbtn.btn-active{
+    background-color: var(--saturn);
+}
+.uranosbtn.btn-active{
+    background-color: var(--uranus);
+}
+.neptunebtn.btn-active{
+    background-color: var(--neptune);
+}
+
+/* @media screen and (max-width: 1625px){
+    .slider{
+        min-height: 100%;
+    }
+
+    .carrousel{
+        gap: 20rem;
+    }
+
+    .planet_img{
+        left: 30%;
+    }
+    
+   .planet_main{
+    gap:20.1rem ;
+   } 
+} */
