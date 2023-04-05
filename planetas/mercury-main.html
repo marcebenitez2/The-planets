@@ -1,216 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://kit.fontawesome.com/d5cc788dce.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-responsive">
         <h1 class="home">THE PLANETS</h1>
-        <ul class="lista">
-          <li class="mercury" style="border-top:5px solid #419DB9 ;"> <a href="./mercury-main.html">MERCURY</a></li>
-          <li class="venus"><a href="./venus.html" >VENUS</a></li>
-          <li class="earth"><a href="./earth.html" >EARTH</a></li>
-          <li class="mars"><a href="./mars.html" >MARS</a></li>
-          <li class="jupiter"><a href="./jupiter.html" >JUPITER</a></li>
-          <li class="saturn"><a href="./saturn.html" >SATURN</a></li>
-          <li class="uranos"><a href="./uranus.html" >URANOS</a></li>
-          <li class="neptune"><a href="./neptune.html" >NEPTUNE</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="container">
-      <div class="carrousel">
-        <div class="slider1 slider">
-          <div class="planet_main">
-            <div class="img_container">
-              <img
-                src="../src/mercury/planet-mercury.svg"
-                alt=""
-                class="planet_img"
-              />
-            </div>
-            <div class="planet_info">
-              <div class="info">
-                <h1 class="planet_name">Mercury</h1>
-                <p class="description">
-                  Mercury is the smallest planet in the Solar System and the
-                  closest to the Sun. Its orbit around the Sun takes 87.97 Earth
-                  days, the shortest of all the Sun's planets. Mercury is one of
-                  four terrestrial planets in the Solar System, and is a rocky
-                  body like Earth.
-                </p>
-                <p class="font">
-                  Source:
-                  <a
-                    href="https://en.wikipedia.org/wiki/Mercury_(planet)"
-                    target="_blank"
-                    class="wiki"
-                    >Wikipedia</a
-                  >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="12"
-                  >
-                    <path
-                      fill="#FFF"
-                      d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 0 1-.305.46.544.544 0 0 1-.195.04.465.465 0 0 1-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 0 1-.352.149.48.48 0 0 1-.352-.149l-.796-.797a.48.48 0 0 1-.149-.351.48.48 0 0 1 .149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 0 1 5.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0 1 10 2.5v3.75z"
-                      opacity="0.5"
-                    ></path>
-                  </svg>
-                </p>
-                <div class="btn mercurybtn btn1 btn-active">
-                  <span class="number">01</span><span>OVERVIEW</span>
-                </div>
-                <div class="btn mercurybtn btn2">
-                  <span class="number">02</span><span>INTERNAL STRUCTURE</span>
-                </div>
-                <div class="btn mercurybtn btn3">
-                  <span class="number">03</span><span>SURFACE GEOLOGY</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider2 slider">
-          <div class="planet_main">
-            <div class="img_container">
-              <img
-                src="../src/mercury/planet-mercury-internal.svg"
-                alt=""
-                class="planet_img"
-              />
-            </div>
-            <div class="planet_info">
-              <div class="info">
-                <h1 class="planet_name">Mercury</h1>
-                <p class="description">
-                  Mercury appears to have a solid silicate crust and mantle
-                  overlying a solid, iron sulfide outer core layer, a deeper
-                  liquid core layer, and a solid inner core. The planet's
-                  density is the second highest in the Solar System at 5.427
-                  g/cm3 , only slightly less than Earth's density.
-                </p>
-                <p class="font">
-                  Source:
-                  <a
-                    href="https://en.wikipedia.org/wiki/Mercury_(planet)"
-                    target="_blank"
-                    class="wiki"
-                    >Wikipedia</a
-                  >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="12"
-                  >
-                    <path
-                      fill="#FFF"
-                      d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 0 1-.305.46.544.544 0 0 1-.195.04.465.465 0 0 1-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 0 1-.352.149.48.48 0 0 1-.352-.149l-.796-.797a.48.48 0 0 1-.149-.351.48.48 0 0 1 .149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 0 1 5.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0 1 10 2.5v3.75z"
-                      opacity="0.5"
-                    ></path>
-                  </svg>
-                </p>
-                 mercury<div class="btn mercurybtn btn1">
-                  <span class="number">01</span><span>OVERVIEW</span>
-                </div>
-                <div class="btn mercurybtn btn2">
-                  <span class="number">02</span><span>INTERNAL STRUCTURE</span>
-                </div>
-                <div class="btn mercurybtn btn3">
-                  <span class="number">03</span><span>SURFACE GEOLOGY</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider3 slider">
-          <div class="planet_main">
-            <div class="img_container">
-              <img
-                src="../src/mercury/planet-mercury.svg"
-                alt=""
-                class="planet_img"
-              />
-              <img
-                src="../src/mercury/geology-mercury.png"
-                alt=""
-                class="png"
-              />
-            </div>
-            <div class="planet_info">
-              <div class="info">
-                <h1 class="planet_name">Mercury</h1>
-                <p class="description">
-                  Mercury's surface is similar in appearance to that of the
-                  Moon, showing extensive mare-like plains and heavy cratering,
-                  indicating that it has been geologically inactive for billions
-                  of years. It is more heterogeneous than either Mars's or the
-                  Moon’s.
-                </p>
-                <p class="font">
-                  Source:
-                  <a
-                    href="https://en.wikipedia.org/wiki/Mercury_(planet)"
-                    target="_blank"
-                    class="wiki"
-                    >Wikipedia</a
-                  >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="12"
-                  >
-                    <path
-                      fill="#FFF"
-                      d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 0 1-.305.46.544.544 0 0 1-.195.04.465.465 0 0 1-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 0 1-.352.149.48.48 0 0 1-.352-.149l-.796-.797a.48.48 0 0 1-.149-.351.48.48 0 0 1 .149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 0 1 5.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0 1 10 2.5v3.75z"
-                      opacity="0.5"
-                    ></path>
-                  </svg>
-                </p>
-                 mercury<div class="btn mercurybtn btn1">
-                  <span class="number">01</span><span>OVERVIEW</span>
-                </div>
-                <div class="btn mercurybtn btn2">
-                  <span class="number">02</span><span>INTERNAL STRUCTURE</span>
-                </div>
-                <div class="btn mercurybtn btn3">
-                  <span class="number">03</span><span>SURFACE GEOLOGY</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <i class="fa-sharp fa-solid fa-bars"></i>
       </div>
 
-      <div class="dates_container">
-        <div class="dates">
-          <p class="date_title">ROTATION TIME</p>
-          <p class="date">58.6 DAYS</p>
+      <div class="nav-normal">
+        <h1 class="home">THE PLANETS</h1>
+        <ul class="list">
+          <li class="mercury" style="border-top: 5px solid #419db9"><a href="./mercury-main.html">MERCURY</a></li>
+          <li class="venus"><a href="./venus.html">VENUS</a></li>
+          <li class="earth"><a href="./earth.html">EARTH</a></li>
+          <li class="mars"><a href="./mars.html">MARS</a></l>
+          <li class="jupiter"><a href="./jupiter.html">JUPITER</a></li>
+          <li class="saturn"><a href="./saturn.html">SATURN</a></li>
+          <li class="uranos"><a href="./uranus.html">URANOS</a></li>
+          <li class="neptune"><a href="./neptune.html">NEPTUNE</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BODY -->
+  <div class="container">
+    <div class="carrousel">
+      <div class="btn-container">
+        <div class="btn">
+          <p id="number">01</p>
+          <p id="category">OVERVIEW</p>
         </div>
-        <div class="dates">
-          <p class="date_title">REVOLUTION TIME</p>
-          <p class="date">87.97 DAYS</p>
+        <div class="btn">
+          <p id="number">02</p>
+          <p id="category">STRUCTURE</p>
         </div>
-        <div class="dates">
-          <p class="date_title">RADIUS</p>
-          <p class="date">2,439.7 KM</p>
+        <div class="btn">
+          <p id="number">03</p>
+          <p id="category">SURFACE</p>
         </div>
-        <div class="dates">
-          <p class="date_title">AVERAGE TEMP.</p>
-          <p class="date">430°C</p>
-        </div>
+      </div>
+      <div class="img-container">
+        <img src="../src/mercury/planet-mercury.svg" alt="" class="img">
+      </div>
+      <div class="info-container">
+        <h1 class="name-planet">MERCURY</h1>
+        <p class="info-planet">Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit
+          around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four
+          terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+        <p class="font">source: <a href="https://en.m.wikipedia.org/wiki/Mercury_(planet)"
+            class="font-src">Wikipedia</a></p>
       </div>
     </div>
 
-    <script src="../app.js"></script>
-  </body>
+    <div class="dates-container">
+      <div class="date">
+        <p class="var">ROTATION TIME</p>
+        <p class="value">58.6 DAYS</p>
+      </div>
+      <div class="date">
+        <p class="var">REVOLUTION TIME</p>
+        <p class="value">87.97 DAYS</p>
+      </div>
+      <div class="date">
+        <p class="var">RADIUS</p>
+        <p class="value">2,439.7 KM</p>
+      </div>
+      <div class="date">
+        <p class="var">AVERAGE TEMP.</p>
+        <p class="value">430°C</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../app.js"></script>
+  </div>
+</body>
+
 </html>
