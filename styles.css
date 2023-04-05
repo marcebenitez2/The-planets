@@ -1,264 +1,279 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
 
-:root{
-    --fondo: #070722;
-    --bordes:#39394e;
-    --mercury: #419DB9;
-    --venus: #eda44a;
-    --earth: #6f2ed6;
-    --mars:#d14e33;
-    --jupiter:#d93b36;
-    --saturn:#cb5020;
-    --uranus:#1ec2a4;
-    --neptune:#2d68f0;
+:root {
+    --Light: #fff;
+    --Dark: #070722;
+    --DarkGrey: #37374e;
+    --Grey: #838391;
+    --Mercury: #419db9;
+    --Venus: #eda44a;
+    --Earth: #6f2ed6;
+    --Mars: #d14e33;
+    --Jupiter: #d93b36;
+    --Saturn: #cb5020;
+    --Uranus: #1ec2a4;
+    --Neptune: #2d68f0;
 }
 
-*{
-    padding: 0 ;
-    margin: 0;
+* {
     box-sizing: border-box;
-    color: #f7ffff;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
-.nav{
+body {
+    background-color: var(--Dark);
+}
+
+.home {
+    color: var(--Light);
+    font-family: antonio;
+}
+
+
+
+@media screen and (max-width:684px) {
+
+
+    .nav-responsive {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 2rem 1rem 1rem;
+        border-bottom: 1px solid var(--DarkGrey);
+        height: 5rem;
+        width: 100vw;
+    }
+
+
+    .nav-responsive i {
+        color: var(--Light);
+        font-size: x-large;
+    }
+
+    .nav-normal {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        border: 1px solid var(--DarkGrey);
+        width: 25vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #number {
+        display: none;
+    }
+
+    #category {
+        color: #fff;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .img {
+        width: 12rem;
+    }
+
+    .info-container {
+        text-align: center;
+    }
+
+    .name-planet {
+        color: var(--Light);
+        font-family: antonio;
+        letter-spacing: 2px;
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .info-planet {
+        color: white;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+
+    .font {
+        text-align: center;
+        color: var(--DarkGrey);
+        font-weight: 700;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .font-src {
+        color: var(--Grey);
+    }
+
+    .dates-container {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        font-size: 13px;
+        font-family: 'League Spartan', sans-serif;
+        text-align: center;
+    }
+
+    .date {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid var(--DarkGrey);
+        padding: .4rem 1.5rem;
+    }
+
+    .var {
+        color: var(--Grey);
+    }
+
+    .value {
+        color: var(--Light);
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width:685px) and (max-width:1015px) {
+
+    .nav-responsive {
+        display: none;
+    }
+
+
+
+    .nav-normal {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .home {
+        text-align: center;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+        gap: 0.5rem;
+        text-decoration: none;
+        font-size: 12px;
+        list-style-type: none;
+    }
+
+    li>a {
+        text-decoration: none;
+        font-style: none;
+        color: white;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: 900;
+    }
+
+    nav {
+        border-bottom: 1px solid var(--DarkGrey);
+    }
+
+    .container {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .carrousel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 3rem 10rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "img-container img-container"
+            "info-container btn-container";
+    }
+
+    .img-container {
+        grid-area: img-container;
+        text-align: center;
+    }
+
+    .img {
+        width: 12rem;
+    }
+
+    .info-container {
+        grid-area: info-container;
+        text-align: left;
+    }
+
+    .btn-container {
+        grid-area: btn-container;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn{
     display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px solid #39394e;
-    height: 5rem;
-    padding: 0 4rem;
-    align-items: center;
-}
-
-.nav ul{
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-}
-
-li > a{
-    font-weight:500;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-.home{
-    display: inline;
-    font-family: 'Antonio', sans-serif;
-    font-size: 28px;
-    letter-spacing: -1px;
-}
-
-
-body{
-    min-height: 100vh;
-    background-color: var(--fondo);
-    overflow: hidden;
-}
-
-.container{
-    width: 80%;
-    margin: auto;
-}
-
-.carrousel{
-    display: flex;
-}
-
-
-.planet_main{
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     width: 100%;
-    gap: 40rem;
-}
-
-.img_container{
-    width: 30rem;
-}
-
-.planet_img{
-    left: 80%;
-    top: 20%;
-    position: relative;
-    width: 20rem;
-}
-
-.png{
-    position: absolute;
-    width: 10rem;
-    transform: translate(10rem,15rem);
-}
-
-.planet_name{
-    font-family: 'Antonio', sans-serif;
-    font-size: 80px;
-    letter-spacing: 3px;
-    font-weight:500;
-}
-
-.description{
-    font-size: 15px;
-    margin: 16px 0 32px;
-    letter-spacing: 1px;
-    width: 25rem;
-    line-height: 1.7rem;
-    font-family: 'League Spartan', sans-serif;
-    font-weight:lighter;
-}
-
-.font{
-    font-family: 'League Spartan', sans-serif;
-    color:#39394e ;
-    font-size: 17px;
-    margin-bottom: 4.5rem;
-}
-
-.wiki{
-    cursor: pointer;
-    margin-left: 10px;
-    color: #81818f;
-}
-
-.btn{
-    margin-top:1rem;
-    height: 2.7rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding: 1rem;
-    border: 1px solid var(--bordes);
-    font-family: 'League Spartan', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.4s ease-in-out;
-}
-
-.btn:hover{
-    background-color: var(--bordes);
-}
-
-.number{
-    color: grey;
-}
-
-.dates_container{
-    display: flex;
     justify-content: space-between;
-}
-
-.dates{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    border: 1px solid var(--bordes);
-    width: 23.5rem;
-    padding: 1rem;
-}
-
-.date_title{
-    font-family: 'League Spartan', sans-serif;
-    color: grey;
-    font-weight: 600;
-}
-
-.date{
-    font-family: 'Antonio', sans-serif;
-    font-size: 40px;
-}
-
-.slider{
-    -webkit-transition: all 600ms cubic-bezier(0.58, 0.01, 0.46, 0.99);
-}
-
-li{
-    display: flex;
-    height: 100%;
-    text-align: center;
+    border: 1px solid var(--DarkGrey);
+    height: 2rem;
     align-items: center;
-}
-
-.mercury:hover{
-    border-top: 5px solid var(--mercury);
-}
-
-.venus:hover{
-    border-top: 5px solid var(--venus);
-}
-
-.earth:hover{
-    border-top: 5px solid var(--earth);
-}
-
-.mars:hover{
-    border-top: 5px solid var(--mars);
-}
-
-.jupiter:hover{
-    border-top: 5px solid var(--jupiter);
-}
-
-.saturn:hover{
-    border-top: 5px solid var(--saturn);
-}
-
-.uranos:hover{
-    border-top: 5px solid var(--uranus);
-}
-
-.neptune:hover{
-    border-top: 5px solid var(--neptune);
-}
-
-.mercurybtn.btn-active{
-    background-color: var(--mercury);
-}
-.venusbtn.btn-active{
-    background-color: var(--venus);
-}
-.earthbtn.btn-active{
-    background-color: var(--earth);
-}
-.marsbtn.btn-active{
-    background-color: var(--mars);
-}
-.jupiterbtn.btn-active{
-    background-color: var(--jupiter);
-}
-.saturnbtn.btn-active{
-    background-color: var(--saturn);
-}
-.uranosbtn.btn-active{
-    background-color: var(--uranus);
-}
-.neptunebtn.btn-active{
-    background-color: var(--neptune);
-}
-
-/* @media screen and (max-width: 1625px){
-    .slider{
-        min-height: 100%;
-    }
-
-    .carrousel{
-        gap: 20rem;
-    }
-
-    .planet_img{
-        left: 30%;
+    padding: 1rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 900;
     }
     
-   .planet_main{
-    gap:20.1rem ;
-   } 
-} */
+    #number{
+    color: var(--Grey);
+    }
+
+    .dates-container{
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .date{
+    border: 1px solid var(--DarkGrey);
+    width: 11rem;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+     font-family: 'League Spartan', sans-serif;
+     font-weight: 900;}
+
+    .var{
+    color: var(--Grey);}
+
+}
